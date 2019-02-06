@@ -45,8 +45,18 @@ where first_name = 'groucho' and last_name = 'williams' ;
 update actor set first_name = 'GROUCHO'
 where first_name = 'HARPO' and last_name = 'WILLIAMS' ;
 
-#5a
-#show create table 
+#5a 
+CREATE TABLE address2 (
+  address_id smallint(5) NOT NULL,
+  address  VARCHAR(50),
+  address2 VARCHAR(50),
+  district VARCHAR(20),
+  city_id smallint(5),
+  postal_code VARCHAR(10),
+  phone VARCHAR(20),
+  location geometry,
+  last_update timestamp
+);
 
 #6a
 select s.first_name, s.last_name, a.address, a.district, a.postal_code
